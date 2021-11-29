@@ -1,11 +1,7 @@
 # Starter pipeline
 - task: CmdLine@2
   inputs:
-    script: |
-      echo Write your commands here
-      
-      echo Hello world
-    workingDirectory: 'https://github.com/john675/MSWD/blob/main/new.py'
+    script: 'new.py'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
