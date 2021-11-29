@@ -1,4 +1,8 @@
-# Starter pipeline
+# Starter pipelinesteps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.6'
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -10,7 +14,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
+- script: python src/new.py
   displayName: 'Run a one-line script'
 
 - script: |
